@@ -19,7 +19,7 @@ const DisplayProducts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/public/product.json");
+        const res = await fetch("product.json");
         const data = await res.json();
         setProducts(data);
         console.log(data);
@@ -37,7 +37,20 @@ const DisplayProducts = () => {
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
-        slidesPerView={2}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        }}
       >
         {" "}
         <div className="">

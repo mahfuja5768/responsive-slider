@@ -1,11 +1,11 @@
 import DisplayProducts from "./components/DisplayProducts/DisplayProducts";
-import Slider from "./components/DisplayProducts/Slider";
+import SecondSlide from "./components/SecondSlide/SecondSlide";
 
 function App() {
   return (
     <div>
       <DisplayProducts/>
-      <Slider></Slider>
+      <SecondSlide></SecondSlide>
     </div>
   );
 }

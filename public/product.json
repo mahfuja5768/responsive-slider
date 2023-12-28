@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Product A",
+    "rating": 3,
+    "price": 29.99,
+    "short_description": "High-quality product with advanced features.",
+    "image_url": "../src/assets/images/img-1.jpg"
+  },
+  {
+    "title": "Product B",
+    "rating": 2,
+    "price": 19.99,
+    "short_description": "Affordable and reliable choice for everyday use.",
+    "image_url": "../src/assets/images/img2.webp"
+  },
+  {
+    "title": "Product C",
+    "rating": 4.0,
+    "price": 39.99,
+    "short_description": "Premium product with sleek design and powerful performance.",
+    "image_url": "../src/assets/images/img3.jpg"
+  },
+  {
+    "title": "Product D",
+    "rating": 4.0,
+    "price": 49.99,
+    "short_description": "Versatile product suitable for various applications.",
+    "image_url": "../src/assets/images/img4.webp"
+  },
+  {
+    "title": "Product E",
+    "rating": 3.0,
+    "price": 79.99,
+    "short_description": "Cutting-edge technology for the ultimate user experience.",
+    "image_url": "../src/assets/images/img5.png"
+  },
+  {
+    "title": "Product F",
+    "rating": 3.0,
+    "price": 24.99,
+    "short_description": "Budget-friendly option without compromising performance.",
+    "image_url": "../src/assets/images/img6.jpg"
+  },
+  {
+    "title": "Product G",
+    "rating": 4.0,
+    "price": 69.99,
+    "short_description": "Elegant design combined with top-notch functionality.",
+    "image_url": "../src/assets/images/img7.webp"
+  },
+  {
+    "title": "Product H",
+    "rating": 2.0,
+    "price": 59.99,
+    "short_description": "Ideal choice for users seeking a balance between features and price.",
+    "image_url": "../src/assets/images/img-8.jpeg"
+  }
+]

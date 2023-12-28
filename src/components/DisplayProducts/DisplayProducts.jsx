@@ -3,7 +3,15 @@ import { useState } from "react";
 
 import "@smastrom/react-rating/style.css";
 import { Rating } from "@smastrom/react-rating";
-import Slider from "./Slider";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper/modules";
 
 const DisplayProducts = () => {
   const [products, setProducts] = useState();
@@ -25,11 +33,18 @@ const DisplayProducts = () => {
 
   return (
     <div className="container mx-auto my-12 px-4">
-      <Slider>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper"
+        slidesPerView={2}
+      >
+        {" "}
+        <div className="">
+          {" "}
           {products?.map((item, idx) => (
-            <div key={idx}>
-              <div className="flex gap-2 items-center justify-center">
+            <SwiperSlide key={idx}>
+              <div className="flex gap-8 items-center justify-center">
                 <img
                   width={250}
                   height={250}
@@ -50,10 +65,10 @@ const DisplayProducts = () => {
                   <p className="w-full">{item.short_description}</p>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
         </div>
-      </Slider>
+      </Swiper>
     </div>
   );
 };
